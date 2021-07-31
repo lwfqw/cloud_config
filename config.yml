@@ -1,0 +1,15 @@
+# 应用名称
+spring:
+  #本地docker的redis
+  redis:
+    database: 1                            # 选择哪个库，默认0库
+    host: 127.0.0.1
+    port: 6379
+    timeout: 30000
+    password:
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 10000ms
+        max-idle: 200
+        min-idle: 5
